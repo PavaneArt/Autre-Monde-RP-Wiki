@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Graphique - Riot Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Bouton pour afficher/masquer la sidebar -->
+<button class="toggle-sidebar"><i class="fas fa-bars"></i></button>
+
+<!-- Début de la barre de navigation -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo-img"></a> <!-- Lien vers la page d'accueil -->
+    </div>
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="index.html">Accueil</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Sous-menu 1</a></li>
+                <li><a href="#">Sous-menu 2</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="personnages.html">Personnages</a>
+            <ul class="dropdown-menu">
+                <li><a href="pans.html">Pans</a></li>
+                <li><a href="#">Cyniks</a></li>
+                <li><a href="bestiaire.html">Bestiaire</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="lieux.html">Lieux</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Villes</a></li>
+                <li><a href="#">Batîments</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="objets.html">Divers</a>
+            <ul class="dropdown-menu">
+                <li><a href="herbier.html">Herbier</a></li>
+                <li><a href="chronologie.html">Chronologie</a></li>
+                <li><a href="carte.html">Carte</a></li>
+            </ul>
+        </li>
+        <li><a href="histoire.html">Histoire</a></li> 
+        <li>
+            <form class="search-bar">
+                <input type="text" placeholder="Rechercher..." aria-label="Rechercher">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</nav>
+<!-- Fin de la barre de navigation -->
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i><span>Accueil</span></a></li>
+        <li><a href="personnages.html"><i class="fas fa-users"></i><span>Persos</span></a></li>
+        <li><a href="lieux.html"><i class="fas fa-map-marker-alt"></i><span>Lieux</span></a></li>
+        <li class="dropdown">
+            <a href="objets.html"><i class="fas fa-box"></i><span>Divers</span></a>
+            <ul class="dropdown-menu">
+                <li><a href="herbier.html">Herbier</a></li>
+                <li><a href="chronologie.html">Chronologie</a></li>
+                <li><a href="carte.html">Carte</a></li>
+            </ul>
+        </li>
+        <li><a href="histoire.html"><i class="fas fa-book"></i><span>Histoire</span></a></li>
+    </ul>
+</div>
+
+<!-- Header avec grande image en background -->
+<header>
+    <div class="container">
+        <h1>Autre-Monde</h1>
+        <p class="slogan">L'essence visuelle de votre projet. Inspiré par l'excellence du design.</p>
+    </div>
+</header>
+
+<!-- Section Aperçu des articles -->
+<section id="articles">
+    <div class="container articles-grid">
+        <div class="main-article">
+            <div class="main-article-img"></div>
+            <div class="main-article-content">
+                <h2>Qu'est-ce qui se passe ?</h2>
+                <p><strong>Monde 2024 | Make Them Believe</strong></p>
+                <span>Actus</span>
+            </div>
+        </div>
+        <div class="side-articles">
+            <div class="side-article">
+                <div class="side-article-img"></div>
+                <div class="side-article-content">
+                    <p>Mise à jour de septembre 2024 | Dev Snapshot - Lor</p>
+                    <span>Actus</span>
+                </div>
+            </div>
+            <div class="side-article">
+                <div class="side-article-img"></div>
+                <div class="side-article-content">
+                    <p>Guide du Mondial 2024</p>
+                    <span>Actus</span>
+                </div>
+            </div>
+            <div class="side-article">
+                <div class="side-article-img"></div>
+                <div class="side-article-content">
+                    <p>Arcane : saison 2 | Bande-annonce officielle</p>
+                    <span>Actus</span>
+                </div>
+            </div>
+            <div class="side-article">
+                <div class="side-article-img"></div>
+                <div class="side-article-content">
+                    <p>Modification des prix régionaux à venir</p>
+                    <span>Actus</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 - Projet en cours. Tous droits réservés.</p>
+        <a href="https://discord.gg/qHRMBVw7X4" class="discord-icon"><i class="fab fa-discord"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
