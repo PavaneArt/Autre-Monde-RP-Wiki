@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieux - Projet L</title>
+    <link rel="stylesheet" href="style-lieux.css"> <!-- Lien vers le fichier CSS spécifique -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Début de la barre de navigation -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Logo" class="logo-img">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="personnages.html">Personnages</a></li>
+        <li><a href="lieux.html">Lieux</a></li>
+        <li><a href="objets.html">Objets</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li>
+            <form class="search-bar">
+                <input type="text" placeholder="Rechercher..." aria-label="Rechercher">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</nav>
+<!-- Fin de la barre de navigation -->
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h3>Navigation</h3>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="personnages.html">Personnages</a></li>
+        <li><a href="lieux.html">Lieux</a></li>
+        <li><a href="objets.html">Objets</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+    </ul>
+</div>
+
+<!-- Contenu Principal : Section des lieux -->
+<div class="main-content">
+    <h2>Lieux</h2>
+    
+    <!-- Section de présentation des lieux -->
+    <section class="places-section">
+        <!-- Lieu 1 avec image ou placeholder -->
+        <div class="place-card">
+            <div class="place-placeholder">Lieu 1</div>
+            <img src="assets/place1.jpg" alt="Lieu 1" class="place-img" onerror="this.style.display='none'">
+            <div class="place-info">
+                <h3>Nom du Lieu</h3>
+                <p><strong>Description :</strong> Ce lieu est un point important dans l'univers du projet. Ajoutez ici une brève description.</p>
+            </div>
+        </div>
+
+        <!-- Lieu 2 avec image ou placeholder -->
+        <div class="place-card">
+            <div class="place-placeholder">Lieu 2</div>
+            <img src="assets/place2.jpg" alt="Lieu 2" class="place-img" onerror="this.style.display='none'">
+            <div class="place-info">
+                <h3>Nom du Lieu</h3>
+                <p><strong>Description :</strong> Ce lieu est un point important dans l'univers du projet. Ajoutez ici une brève description.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 - Projet en cours. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

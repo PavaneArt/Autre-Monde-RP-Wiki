@@ -1,0 +1,205 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1e;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 270px; /* Espace pour la sidebar */
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: black;
+    min-height: 100vh;
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Section de présentation des lieux */
+.places-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.place-card {
+    background-color: #121214;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;  /* Largeur augmentée pour une forme rectangulaire */
+    height: 350px; /* Hauteur fixe pour donner l'aspect rectangulaire */
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ombre subtile */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.place-card:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Accentuation de l'ombre au survol */
+}
+
+.place-placeholder {
+    background-color: #3498db;
+    color: white;
+    padding: 50px 0;  /* Ajusté pour une hauteur réduite */
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.place-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.place-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.place-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #dddddd;
+}
+
+/* Footer */
+footer {
+    background-color: #121214;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Même couleur que sur les autres pages */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+/* Barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Fond sombre pour correspondre au style global */
+    color: white;
+}
+
+.search-bar button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #c0392b;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    background-color: #121214;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+    padding-left: 10px;
+}
